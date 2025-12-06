@@ -89,6 +89,17 @@ const Navbar = ({ links = [], className = "", variant = "fixed" }) => {
             <div 
                 className={`fixed inset-0 bg-primary z-[999] flex flex-col items-center justify-center transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}
             >
+                {/* Close Button */}
+                <button 
+                    className="absolute top-6 right-6 text-white p-2 hover:bg-white/10 rounded-full transition-colors"
+                    onClick={() => setIsOpen(false)}
+                    aria-label="Close Menu"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
                 <div className="flex flex-col items-center gap-8">
                     {/* Logo in Menu */}
                     <div className="flex flex-col items-center gap-4 mb-8">
