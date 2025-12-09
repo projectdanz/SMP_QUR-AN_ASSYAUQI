@@ -1,5 +1,4 @@
 import Button from "../../component/Button";
-import { Link } from "react-router-dom";
 
 const Seaction__keunggulan = () => {
   const stats = [
@@ -43,14 +42,18 @@ const Seaction__keunggulan = () => {
               keislaman.
             </p>
           </div>
-          <Link to="/contact">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeiVbj1oUbye_KVPuX1ln60Jt8aTkC3JCmzb943GMXLpIrthA/viewform?usp=publish-editor"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button
               variant="ghost"
               className="bg-white text-primary hover:bg-slate-100 px-8 py-4 shadow-lg"
             >
               Daftar Sekarang
             </Button>
-          </Link>
+          </a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

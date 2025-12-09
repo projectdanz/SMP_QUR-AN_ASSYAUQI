@@ -65,7 +65,13 @@ const Footer = () => {
                 title="Lokasi Sekolah"
               ></iframe>
             </div>
-            <Button className="w-full">Daftar Sekarang</Button>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeiVbj1oUbye_KVPuX1ln60Jt8aTkC3JCmzb943GMXLpIrthA/viewform?usp=publish-editor"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="w-full">Daftar Sekarang</Button>
+            </a>
           </div>
         </div>
 

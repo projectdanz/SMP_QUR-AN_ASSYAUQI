@@ -23,9 +23,15 @@ const Header = () => {
           “Mendidik Generasi Qur’ani Yang Terbangun Jiwa Leadership Dan
           Enterpreneurship”
         </p>
-        <Button variant="primary" className="bg-amber-600 hover:bg-amber-700">
-          Daftar Sekarang
-        </Button>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeiVbj1oUbye_KVPuX1ln60Jt8aTkC3JCmzb943GMXLpIrthA/viewform?usp=publish-editor"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button variant="primary" className="bg-amber-600 hover:bg-amber-700">
+            Daftar Sekarang
+          </Button>
+        </a>
       </div>
     </div>
   );

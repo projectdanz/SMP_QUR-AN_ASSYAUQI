@@ -1,6 +1,5 @@
 import imageSchool from "../../assets/image/image__school.jpg";
 import Button from "../../component/Button";
-import { Link } from "react-router-dom";
 
 const Seaction__pengenalan = () => {
   const points = [
@@ -66,7 +65,7 @@ const Seaction__pengenalan = () => {
               kepemimpinan.
             </p>
 
-            <div className="space-y-4 mb-10"> 
+            <div className="space-y-4 mb-10">
               {points.map((point, index) => (
                 <div key={index} className="flex items-start gap-4">
                   <div className="mt-1 bg-green-100 p-1 rounded-full text-green-600 shrink-0">
@@ -89,14 +88,18 @@ const Seaction__pengenalan = () => {
               ))}
             </div>
 
-            <Link to="/contact">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeiVbj1oUbye_KVPuX1ln60Jt8aTkC3JCmzb943GMXLpIrthA/viewform?usp=publish-editor"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 variant="primary"
                 className="px-8 py-4 text-lg shadow-lg shadow-primary/30"
               >
                 Daftar Sekarang
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

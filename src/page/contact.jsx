@@ -3,7 +3,6 @@ import ayokPondok from "../assets/image/ayokPondok.png";
 import { FaWhatsapp } from "react-icons/fa";
 import Button from "../component/Button";
 
-
 const Contact = () => {
   const cardRef = useRef(null);
 
@@ -76,7 +75,7 @@ const Contact = () => {
                   className="flex items-center p-4 rounded-2xl bg-green-50 border border-green-100 hover:bg-green-100 hover:shadow-md transition-all group"
                 >
                   <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
-                    <FaWhatsapp size={32} color="#ffffffff"/>
+                    <FaWhatsapp size={32} color="#ffffffff" />
                   </div>
                   <div className="ml-4">
                     <p className="text-sm font-semibold text-green-600 uppercase tracking-wider">
@@ -211,9 +210,18 @@ const Contact = () => {
         </div>
 
         <div className="mt-8 flex justify-center">
-          <Button variant="primary" className="bg-amber-600 hover:bg-amber-700 px-24 py-3 text-lg font-semibold rounded-full shadow-lg transition-all duration-300">
-            Daftar Sekarang
-          </Button>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeiVbj1oUbye_KVPuX1ln60Jt8aTkC3JCmzb943GMXLpIrthA/viewform?usp=publish-editor"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              variant="primary"
+              className="bg-amber-600 hover:bg-amber-700 px-24 py-3 text-lg font-semibold rounded-full shadow-lg transition-all duration-300"
+            >
+              Daftar Sekarang
+            </Button>
+          </a>
         </div>
 
         {/* Map Section */}
