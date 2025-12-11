@@ -1,5 +1,6 @@
 import Seaction__pengenalan from "./about/seaction__pengenalan";
 import saungPondok from "../assets/image/saungPondok.jpg";
+import Seaction__sertifikasi from "./about/seaction__sertifikasi";
 import Seaction__keunggulan from "./about/seaction__keunggulan";
 import Seaction__strukturInti from "./about/seaction__strukturInti";
 import Footer from "./footer";
@@ -33,6 +34,7 @@ const About = () => {
 
       <div className="container mx-auto px-6 py-10">
         <Seaction__pengenalan />
+        <Seaction__sertifikasi />
         <Seaction__strukturInti />
         <Seaction__keunggulan />
       </div>

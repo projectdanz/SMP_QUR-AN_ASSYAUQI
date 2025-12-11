@@ -22,6 +22,11 @@ const Seaction__keunggulan = () => {
       label: "Berdiri",
       desc: "Tahun didirikannya Pondok Pesantren",
     },
+    // {
+    //   value: "Resmi",
+    //   label: "SMP Unggulan Tersertifikasi Resmi",
+    //   desc: "SMP Qur'an Assyauqi telah tersertifikasi Resmi NPSN (Nomer Pokok Sekolah Nasional) 70054917, No. 3574/G4/KL/2009 Tahun 2009.",
+    // },
   ];
 
   return (
