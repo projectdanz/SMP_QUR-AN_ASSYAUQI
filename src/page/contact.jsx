@@ -209,7 +209,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="mt-8 flex justify-center">
+        {/* <div className="mt-8 flex justify-center">
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSeiVbj1oUbye_KVPuX1ln60Jt8aTkC3JCmzb943GMXLpIrthA/viewform?usp=publish-editor"
             target="_blank"
@@ -222,7 +222,7 @@ const Contact = () => {
               Daftar Sekarang
             </Button>
           </a>
-        </div>
+        </div> */}
 
         {/* Map Section */}
         <div className="mt-16 bg-white p-4 rounded-3xl shadow-lg">
