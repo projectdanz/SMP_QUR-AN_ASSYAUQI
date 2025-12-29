@@ -23,7 +23,7 @@ const Home = () => {
               <Button className="w-64 py-4">Daftar Sekarang</Button>
             </a>
       </div>
-      <Testimoni />
+      {/* <Testimoni /> */}
       <Footer />
 
       {/* WhatsApp Floating Button */}

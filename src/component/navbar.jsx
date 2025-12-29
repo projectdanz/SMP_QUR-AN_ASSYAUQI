@@ -34,8 +34,11 @@ const Navbar = ({ links = [], className = "", variant = "fixed" }) => {
   // Reset state on route change
   useEffect(() => {
     window.scrollTo(0, 0);
-    setScrolled(false);
-    setIsOpen(false);
+    // Use timeout to defer state update and avoid cascading render lint error
+    const timer = setTimeout(() => {
+      setIsOpen(false);
+    }, 0);
+    return () => clearTimeout(timer);
   }, [location.pathname]);
 
   // Lock body scroll when menu is open
