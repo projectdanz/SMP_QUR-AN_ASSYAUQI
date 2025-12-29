@@ -1,5 +1,6 @@
 import { motion as Motion } from "framer-motion";
 import image__school from "../assets/image/image__school.jpg";
+import image__school__mobile from "../assets/mobile/image__school.jpg";
 import Button from "../component/Button";
 
 const Header = () => {
@@ -12,11 +13,14 @@ const Header = () => {
         transition={{ duration: 1.5, ease: "easeOut" }}
         className="absolute inset-0"
       >
-        <img
-          src={image__school}
-          alt="School Background"
-          className="w-full h-full object-cover"
-        />
+        <picture>
+          <source srcSet={image__school__mobile} media="(max-width: 768px)" />
+          <img
+            src={image__school}
+            alt="School Background"
+            className="w-full h-full object-cover"
+          />
+        </picture>
         <div className="absolute inset-0 bg-black/50"></div>
       </Motion.div>
 

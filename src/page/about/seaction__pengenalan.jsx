@@ -1,4 +1,5 @@
 import imageSchool from "../../assets/image/image__school.jpg";
+import imageSchoolMobile from "../../assets/mobile/image__school.jpg";
 import Button from "../../component/Button";
 
 const Seaction__pengenalan = () => {
@@ -15,11 +16,14 @@ const Seaction__pengenalan = () => {
           {/* Image Section */}
           <div className="relative group">
             <div className="absolute -inset-4 bg-primary/20 rounded-3xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300"></div>
-            <img
-              src={imageSchool}
-              alt="Gedung Sekolah SMP Qur'an Assyauqi"
-              className="relative rounded-3xl shadow-2xl w-full h-[400px] lg:h-[500px] object-cover transform transition-transform duration-500 group-hover:scale-[1.01]"
-            />
+            <picture>
+              <source srcSet={imageSchoolMobile} media="(max-width: 768px)" />
+              <img
+                src={imageSchool}
+                alt="Gedung Sekolah SMP Qur'an Assyauqi"
+                className="relative rounded-3xl shadow-2xl w-full h-[400px] lg:h-[500px] object-cover transform transition-transform duration-500 group-hover:scale-[1.01]"
+              />
+            </picture>
             {/* Floating Badge */}
             <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 hidden md:block">
               <div className="flex items-center gap-3">

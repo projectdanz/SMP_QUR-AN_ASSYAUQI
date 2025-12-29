@@ -2,23 +2,29 @@ import { motion as Motion } from "framer-motion";
 import Kelas from "../../assets/image/kelasAC.png";
 import LabKomp from "../../assets/image/labKomp.png";
 import Asrama from "../../assets/image/asramaAC.png";
+import KelasMobile from "../../assets/mobile/kelasAC.png";
+import LabKompMobile from "../../assets/mobile/labKomp.png";
+import AsramaMobile from "../../assets/mobile/asramaAC.png";
 
 const Fasilitas = () => {
   const facilities = [
     {
       image: LabKomp,
+      mobileImage: LabKompMobile,
       title: "Laboratorium Komputer AC",
       description:
         "Dilengkapi dengan akses internet berkecepatan tinggi untuk menunjang pembelajaran digital.",
     },
     {
       image: Kelas,
+      mobileImage: KelasMobile,
       title: "Ruang Kelas AC",
       description:
         "Ruang belajar yang nyaman dan kondusif dengan pendingin ruangan di setiap kelas.",
     },
     {
       image: Asrama,
+      mobileImage: AsramaMobile,
       title: "Asrama AC",
       description:
         "Fasilitas asrama terpisah untuk putra dan putri dengan kenyamanan pendingin ruangan.",
@@ -73,11 +79,17 @@ const Fasilitas = () => {
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group"
             >
               <div className="relative overflow-hidden h-56">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                />
+                <picture>
+                  <source
+                    srcSet={item.mobileImage}
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
               </div>
               <div className="p-8">
