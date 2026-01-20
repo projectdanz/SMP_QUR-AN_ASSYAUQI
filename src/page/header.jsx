@@ -25,7 +25,7 @@ const Header = () => {
       </Motion.div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-6">
         <Motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

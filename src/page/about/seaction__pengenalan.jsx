@@ -46,7 +46,7 @@ const Seaction__pengenalan = () => {
                   <p className="text-sm text-slate-500 font-medium">
                     Terakreditasi
                   </p>
-                  <p className="text-lg font-bold text-slate-800">Unggul</p>
+                  <p className="text-lg font-bold text-slate-800">-</p>
                 </div>
               </div>
             </div>

@@ -16,7 +16,7 @@ const Seaction__strukturInti = () => {
     },
     {
       name: "Velantika, S.T M.T",
-      role: "Kepala Yayasan",
+      role: "Kepala Sekolah",
       image: Kepala,
     },
   ];
