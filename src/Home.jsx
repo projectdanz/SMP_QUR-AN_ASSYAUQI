@@ -71,7 +71,7 @@ const Home = () => {
             />
             <DocumentationCard
               images={imagesPanahan}
-              title="Horsebow"
+              title="Kegiatan Horsebow"
               date="28 Desember 2025"
               targetId="horsebow"
             />
@@ -113,10 +113,10 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="panahan" className="py-16 px-4 bg-white">
+      <section id="horsebow" className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 md:mb-12 text-center">
-            Dokumentasi Kegiatan Panahan
+            Dokumentasi Kegiatan horsebow
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {imagesPanahan.map((img, i) => (
@@ -127,7 +127,7 @@ const Home = () => {
                 <img
                   src={img}
                   className="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-300"
-                  alt={`Dokumentasi Kegiatan Panahan ${i + 1}`}
+                  alt={`Dokumentasi Kegiatan horsebow ${i + 1}`}
                 />
               </div>
             ))}
