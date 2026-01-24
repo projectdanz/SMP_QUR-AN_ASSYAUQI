@@ -79,13 +79,13 @@ const Navbar = ({ links = [], className = "", variant = "fixed" }) => {
         <div className="container mx-auto flex justify-between items-center px-6">
           {/* Logo / Brand Name */}
           <div
-            className={`hidden md:flex items-center gap-3 transition-opacity duration-300 ${
-              scrolled || isOpen ? "opacity-100" : "opacity-0"
+            className={`flex items-center gap-2 md:gap-3 transition-opacity duration-300 ${
+              scrolled || isOpen ? "opacity-100" : "opacity-0 md:opacity-0"
             }`}
           >
-            <img src={SchoolLogo} alt="Logo" className="h-10 w-auto" />
-            <div className="text-md font-bold text-white">
-              SMP QUR'AN ASSYAUQI
+            <img src={SchoolLogo} alt="Logo" className="h-8 md:h-10 w-auto" />
+            <div className="text-xs md:text-md font-bold text-white leading-tight">
+              SMP QUR'AN <br className="md:hidden" /> ASSYAUQI
             </div>
           </div>
 
