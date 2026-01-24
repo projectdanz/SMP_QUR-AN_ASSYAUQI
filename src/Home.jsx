@@ -24,6 +24,8 @@ import Documentasi14 from "./assets/image/Documentasi_kegiatan/documentasi14.jpe
 import Documentasi15 from "./assets/image/Documentasi_kegiatan/documentasi15.jpeg";
 import Documentasi16 from "./assets/image/Documentasi_kegiatan/documentasi16.jpeg";
 import Documentasi17 from "./assets/image/Documentasi_kegiatan/documentasi17.jpeg";
+import Documentasi18 from "./assets/image/Documentasi_kegiatan/documentasi18.jpeg";
+import Documentasi19 from "./assets/image/Documentasi_kegiatan/documentasi19.jpeg";
 
 const Home = () => {
   const imagesMHQ = [
@@ -33,16 +35,14 @@ const Home = () => {
     Documentasi4,
     Documentasi5,
     Documentasi6,
-  ];
-
-  const imagesBaksos = [
     Documentasi7,
     Documentasi8,
+    Documentasi18,
+  ];
+  
+  const imagesPanahan = [
     Documentasi9,
     Documentasi10,
-  ];
-
-  const imagesPanahan = [
     Documentasi11,
     Documentasi12,
     Documentasi13,
@@ -50,6 +50,7 @@ const Home = () => {
     Documentasi15,
     Documentasi16,
     Documentasi17,
+    Documentasi19,
   ];
 
   return (
@@ -61,24 +62,18 @@ const Home = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
             Dokumentasi Kegiatan
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <DocumentationCard
               images={imagesMHQ}
               title="Kegiatan Acara MHQ"
-              date="-"
+              date="20 Desember 2025"
               targetId="acara-mhq"
             />
             <DocumentationCard
-              images={imagesBaksos}
-              title="Kegiatan -"
-              date="-"
-              targetId="bakti-sosial"
-            />
-            <DocumentationCard
               images={imagesPanahan}
-              title="Kegiatan Panahan"
-              date="-"
-              targetId="panahan"
+              title="Horsebow"
+              date="28 Desember 2025"
+              targetId="horsebow"
             />
           </div>
         </div>
@@ -111,28 +106,6 @@ const Home = () => {
                   src={img}
                   className="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-300"
                   alt={`Dokumentasi MHQ ${i + 1}`}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="bakti-sosial" className="py-16 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 md:mb-12 text-center">
-            Dokumentasi -
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-            {imagesBaksos.map((img, i) => (
-              <div
-                key={i}
-                className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
-              >
-                <img
-                  src={img}
-                  className="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-300"
-                  alt={`Dokumentasi Bakti Sosial ${i + 1}`}
                 />
               </div>
             ))}
