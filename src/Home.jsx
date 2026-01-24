@@ -12,28 +12,75 @@ import Documentasi2 from "./assets/image/Documentasi_kegiatan/documentasi2.jpeg"
 import Documentasi3 from "./assets/image/Documentasi_kegiatan/documentasi3.jpeg";
 import Documentasi4 from "./assets/image/Documentasi_kegiatan/documentasi4.jpeg";
 import Documentasi5 from "./assets/image/Documentasi_kegiatan/documentasi5.jpeg";
+import Documentasi6 from "./assets/image/Documentasi_kegiatan/documentasi6.jpeg";
+import Documentasi7 from "./assets/image/Documentasi_kegiatan/documentasi7.jpeg";
+import Documentasi8 from "./assets/image/Documentasi_kegiatan/documentasi8.jpeg";
+import Documentasi9 from "./assets/image/Documentasi_kegiatan/documentasi9.jpeg";
+import Documentasi10 from "./assets/image/Documentasi_kegiatan/documentasi10.jpeg";
+import Documentasi11 from "./assets/image/Documentasi_kegiatan/documentasi11.jpeg";
+import Documentasi12 from "./assets/image/Documentasi_kegiatan/documentasi12.jpeg";
+import Documentasi13 from "./assets/image/Documentasi_kegiatan/documentasi13.jpeg";
+import Documentasi14 from "./assets/image/Documentasi_kegiatan/documentasi14.jpeg";
+import Documentasi15 from "./assets/image/Documentasi_kegiatan/documentasi15.jpeg";
+import Documentasi16 from "./assets/image/Documentasi_kegiatan/documentasi16.jpeg";
+import Documentasi17 from "./assets/image/Documentasi_kegiatan/documentasi17.jpeg";
 
 const Home = () => {
-  const images = [
+  const imagesMHQ = [
     Documentasi1,
     Documentasi2,
     Documentasi3,
     Documentasi4,
     Documentasi5,
+    Documentasi6,
+  ];
+
+  const imagesBaksos = [
+    Documentasi7,
+    Documentasi8,
+    Documentasi9,
+    Documentasi10,
+  ];
+
+  const imagesPanahan = [
+    Documentasi11,
+    Documentasi12,
+    Documentasi13,
+    Documentasi14,
+    Documentasi15,
+    Documentasi16,
+    Documentasi17,
   ];
 
   return (
     <>
       <Header />
       {/* Documentation Card Section */}
-      <section className="flex justify-center py-10 px-4 bg-gray-50 my-20">
+      <section className="py-20 px-4 bg-gray-50 my-10">
         <div className="max-w-6xl mx-auto">
-          <DocumentationCard
-            images={images}
-            title="Kegiatan Acara MHQ"
-            date="20 Desember 2025"
-            targetId="acara-mhq"
-          />
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
+            Dokumentasi Kegiatan
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <DocumentationCard
+              images={imagesMHQ}
+              title="Kegiatan Acara MHQ"
+              date="-"
+              targetId="acara-mhq"
+            />
+            <DocumentationCard
+              images={imagesBaksos}
+              title="Kegiatan -"
+              date="-"
+              targetId="bakti-sosial"
+            />
+            <DocumentationCard
+              images={imagesPanahan}
+              title="Kegiatan Panahan"
+              date="-"
+              targetId="panahan"
+            />
+          </div>
         </div>
       </section>
       <VisiMisi />
@@ -48,15 +95,36 @@ const Home = () => {
           <Button className="w-64 py-4">Daftar Sekarang</Button>
         </a>
       </div>
-      {/* Documentation Gallery Section */}
+      {/* Documentation Gallery Sections */}
       <section id="acara-mhq" className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 md:mb-12 text-center">
-            Dokumentasi Kegiatan SMP QUR'AN ASSYAUQI
+            Dokumentasi Kegiatan MHQ
           </h2>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-            {images.map((img, i) => (
+            {imagesMHQ.map((img, i) => (
+              <div
+                key={i}
+                className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
+              >
+                <img
+                  src={img}
+                  className="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-300"
+                  alt={`Dokumentasi MHQ ${i + 1}`}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="bakti-sosial" className="py-16 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 md:mb-12 text-center">
+            Dokumentasi -
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            {imagesBaksos.map((img, i) => (
               <div
                 key={i}
                 className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
@@ -65,6 +133,28 @@ const Home = () => {
                   src={img}
                   className="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-300"
                   alt={`Dokumentasi Bakti Sosial ${i + 1}`}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="panahan" className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 md:mb-12 text-center">
+            Dokumentasi Kegiatan Panahan
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            {imagesPanahan.map((img, i) => (
+              <div
+                key={i}
+                className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
+              >
+                <img
+                  src={img}
+                  className="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-300"
+                  alt={`Dokumentasi Kegiatan Panahan ${i + 1}`}
                 />
               </div>
             ))}
