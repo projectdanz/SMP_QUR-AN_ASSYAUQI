@@ -1,6 +1,7 @@
 import Pendiri from "../../assets/image/pendiri.jpg";
 import Ketua from "../../assets/image/ketua.jpg";
 import Kepala from "../../assets/image/kepala.jpg";
+import Pembina from "../../assets/image/Dr._K.H_Lalu_Agus_Pujiartha,_MA.jpeg";
 
 const Seaction__strukturInti = () => {
   const team = [
@@ -18,6 +19,11 @@ const Seaction__strukturInti = () => {
       name: "Velantika, S.T M.T",
       role: "Kepala Sekolah",
       image: Kepala,
+    },
+    {
+      name: "Dr. K.H Lalu Agus Pujiartha, MA",
+      role: "Dewan Pembina",
+      image: Pembina,
     },
   ];
 
@@ -39,7 +45,9 @@ const Seaction__strukturInti = () => {
           {team.map((member, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden group hover:-translate-y-2 transition-all duration-300"
+              className={`bg-white rounded-2xl shadow-lg overflow-hidden group hover:-translate-y-2 transition-all duration-300 ${
+                index === 3 ? "md:col-start-2" : ""
+              }`}
             >
               <div className="h-80 overflow-hidden relative">
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
