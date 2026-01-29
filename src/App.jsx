@@ -16,7 +16,7 @@ function App() {
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
     { href: "/contact", label: "Contact Us" },
-    { href: "/documentation", label: "Documentation" },
+    { href: "/documentation", label: "News Agenda" },
   ];
 
   useEffect(() => {
