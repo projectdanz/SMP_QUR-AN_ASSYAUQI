@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const DocumentationCard = ({ images, title, date, targetId }) => {
   return (
     <div className="w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg bg-white hover:shadow-xl transition">
@@ -20,14 +22,14 @@ const DocumentationCard = ({ images, title, date, targetId }) => {
         <p className="text-sm text-gray-500">{date}</p>
 
         <div className="flex justify-center">
-          <a
-            href={`/documentation#${targetId}`}
+          <Link
+            to={`/documentation#${targetId}`}
             className="mt-3 inline-block w-64 text-center rounded-full 
                        bg-[#061E29] text-white py-2.5 px-4 text-sm font-semibold
                        hover:bg-teal-600 transition-all duration-300 shadow-md hover:shadow-lg active:scale-95"
           >
             Lihat Dokumentasi Lengkap
-          </a>
+          </Link>
         </div>
       </div>
     </div>
