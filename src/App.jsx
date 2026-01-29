@@ -7,6 +7,7 @@ import Navbar from "./component/navbar";
 import Home from "./Home";
 import About from "./page/about";
 import Contact from "./page/contact";
+import Documentation from "./page/Documentation";
 
 function App() {
   const [showScroll, setShowScroll] = useState(false);
@@ -15,6 +16,7 @@ function App() {
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
     { href: "/contact", label: "Contact Us" },
+    { href: "/documentation", label: "Documentation" },
   ];
 
   useEffect(() => {
@@ -41,6 +43,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/documentation" element={<Documentation />} />
       </Routes>
 
       {/* Back to Top Button */}
