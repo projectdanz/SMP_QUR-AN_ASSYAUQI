@@ -8,40 +8,9 @@ import Footer from "./page/footer";
 import { FaWhatsapp } from "react-icons/fa";
 import Button from "./component/Button";
 
-import Festival2 from "./assets/image/Documentasi_kegiatan/festival_mhq/FestivalMusabaqoh-2.jpeg";
-import Festival1 from "./assets/image/Documentasi_kegiatan/festival_mhq/FestivalMusabaqoh-1.jpeg";
-import Festival6 from "./assets/image/Documentasi_kegiatan/festival_mhq/FestivalMusabaqoh-6.jpeg";
-
-import JuaraHorsebow3 from "./assets/image/Documentasi_kegiatan/horsebow/KejuaraanHorseBow-3.jpeg";
-import Horsebow4 from "./assets/image/Documentasi_kegiatan/horsebow/KegiatanHorseBow-4.jpeg";
-import Horsebow5 from "./assets/image/Documentasi_kegiatan/horsebow/KegiatanHorseBow-5.jpeg";
-
-import Berenang1 from "./assets/image/Documentasi_kegiatan/berenang/Kegiatan_berenang1.jpeg"
-import Berenang2 from "./assets/image/Documentasi_kegiatan/berenang/Kegiatan_berenang2.jpeg"
-import Berenang5 from "./assets/image/Documentasi_kegiatan/berenang/Kegiatan_berenang5.jpeg"
-
-
-
+import { allDocumentation } from "./data/documentationData";
 
 const Home = () => {
-  const imagesMHQ = [
-    Festival1,
-    Festival2,
-    Festival6,
-  ];
-
-  const imagesPanahan = [
-    Horsebow4,
-    JuaraHorsebow3,
-    Horsebow5,
-  ];
-
-  const imagesBerenang = [
-    Berenang1,
-    Berenang2,
-    Berenang5,
-  ];
-
   return (
     <>
       <Header />
@@ -65,22 +34,31 @@ const Home = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <DocumentationCard
-              images={imagesMHQ}
+              images={
+                allDocumentation.find((d) => d.id === "festival-musabaqoh")
+                  ?.images || []
+              }
               title="Kegiatan Acara MHQ"
               date="20 Desember 2025"
-              targetId="acara-mhq"
+              targetId="festival-musabaqoh"
             />
             <DocumentationCard
-              images={imagesPanahan}
+              images={
+                allDocumentation.find((d) => d.id === "horsebow-kegiatan")
+                  ?.images || []
+              }
               title="Kegiatan Horsebow"
               date="28 Desember 2025"
-              targetId="horsebow"
+              targetId="horsebow-kegiatan"
             />
             <DocumentationCard
-              images={imagesBerenang}
+              images={
+                allDocumentation.find((d) => d.id === "berenang-kegiatan")
+                  ?.images || []
+              }
               title="Kegiatan Berenang"
               date="-"
-              targetId="berenang"
+              targetId="berenang-kegiatan"
             />
           </div>
         </div>

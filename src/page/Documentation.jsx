@@ -1,44 +1,13 @@
-import Festival1 from "../assets/image/Documentasi_kegiatan/festival_mhq/FestivalMusabaqoh-1.jpeg";
-import Festival2 from "../assets/image/Documentasi_kegiatan/festival_mhq/FestivalMusabaqoh-2.jpeg";
-import Festival3 from "../assets/image/Documentasi_kegiatan/festival_mhq/FestivalMusabaqoh-3.jpeg";
-import Festival4 from "../assets/image/Documentasi_kegiatan/festival_mhq/FestivalMusabaqoh-4.jpeg";
-import Festival5 from "../assets/image/Documentasi_kegiatan/festival_mhq/FestivalMusabaqoh-5.jpeg";
-import Festival6 from "../assets/image/Documentasi_kegiatan/festival_mhq/FestivalMusabaqoh-6.jpeg";
-import Festival7 from "../assets/image/Documentasi_kegiatan/festival_mhq/FestivalMusabaqoh-7.jpeg";
-import Peserta1 from "../assets/image/Documentasi_kegiatan/festival_mhq/PesertaLombaMHQdanAdzan-1.jpeg";
-import Peserta2 from "../assets/image/Documentasi_kegiatan/festival_mhq/PesertaLombaMHQdanAdzan-2.jpeg";
-import LombaAdzan from "../assets/image/Documentasi_kegiatan/festival_mhq/LombaAdzan.jpeg";
-import KejuaraanMHQ from "../assets/image/Documentasi_kegiatan/festival_mhq/KejuaraanMHQ.jpeg";
-
-import Horsebow1 from "../assets/image/Documentasi_kegiatan/horsebow/KegiatanHorseBow-1.jpeg";
-import Horsebow2 from "../assets/image/Documentasi_kegiatan/horsebow/KegiatanHorseBow-2.jpeg";
-import Horsebow3 from "../assets/image/Documentasi_kegiatan/horsebow/KegiatanHorseBow-3.jpeg";
-import Horsebow4 from "../assets/image/Documentasi_kegiatan/horsebow/KegiatanHorseBow-4.jpeg";
-import Horsebow5 from "../assets/image/Documentasi_kegiatan/horsebow/KegiatanHorseBow-5.jpeg";
-import Horsebow6 from "../assets/image/Documentasi_kegiatan/horsebow/KegiatanHorseBow-6.jpeg";
-import Horsebow7 from "../assets/image/Documentasi_kegiatan/horsebow/KegiatanHorseBow-7.jpeg";
-import Horsebow8 from "../assets/image/Documentasi_kegiatan/horsebow/KegiatanHorseBow-8.jpeg";
-import Horsebow9 from "../assets/image/Documentasi_kegiatan/horsebow/KegiatanHorseBow-9.jpeg";
-import Horsebow10 from "../assets/image/Documentasi_kegiatan/horsebow/KegiatanHorseBow-10.jpeg";
-import Horsebow11 from "../assets/image/Documentasi_kegiatan/horsebow/KegiatanHorseBow-11.jpeg";
-import JuaraHorsebow1 from "../assets/image/Documentasi_kegiatan/horsebow/KejuaraanHorseBow-1.jpeg";
-import JuaraHorsebow2 from "../assets/image/Documentasi_kegiatan/horsebow/KejuaraanHorseBow-2.jpeg";
-import JuaraHorsebow3 from "../assets/image/Documentasi_kegiatan/horsebow/KejuaraanHorseBow-3.jpeg";
-import JuaraHorsebow4 from "../assets/image/Documentasi_kegiatan/horsebow/KejuaraanHorseBow-4.jpeg";
-import JuaraHorsebow5 from "../assets/image/Documentasi_kegiatan/horsebow/KejuaraanHorseBow-5.jpeg";
-
-import Berenang1 from "../assets/image/Documentasi_kegiatan/berenang/Kegiatan_berenang1.jpeg";
-import Berenang2 from "../assets/image/Documentasi_kegiatan/berenang/Kegiatan_berenang2.jpeg";
-import Berenang3 from "../assets/image/Documentasi_kegiatan/berenang/Kegiatan_berenang3.jpeg";
-import Berenang4 from "../assets/image/Documentasi_kegiatan/berenang/Kegiatan_berenang4.jpeg";
-import Berenang5 from "../assets/image/Documentasi_kegiatan/berenang/Kegiatan_berenang5.jpeg";
-import Berenang6 from "../assets/image/Documentasi_kegiatan/berenang/Kegiatan_berenang6.jpeg";
-
 import { motion } from "framer-motion";
 import { FaArrowLeft } from "react-icons/fa6";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Card from "../component/Card";
+import {
+  documentationMhq,
+  documentationHorsebow,
+  documentationBerenang,
+} from "../data/documentationData";
 
 const Documentation = () => {
   const { hash } = useLocation();
@@ -53,372 +22,6 @@ const Documentation = () => {
       }
     }
   }, [hash]);
-
-  const DocumentationMhq = [
-    {
-      id: 1,
-      link: Festival1,
-      title: "Festival Musabaqoh",
-      date: "25 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Festival MHQ SMP Qur’an Assyauqi yang diselenggarakan pada 25 Desember 2025 merupakan ajang untuk menumbuhkan kecintaan siswa terhadap Al-Qur’an serta memotivasi mereka agar lebih semangat dalam menghafal dan menjaga hafalan. Kegiatan ini bertujuan membentuk pribadi yang disiplin, percaya diri, dan berakhlak Qur’ani. Melalui festival ini, anak-anak dilatih untuk istiqamah, bertanggung jawab, serta menjadikan Al-Qur’an sebagai pedoman dalam sikap dan kehidupan sehari-hari.",
-    },
-    {
-      id: 2,
-      link: Festival2,
-      title: "Festival Musabaqoh",
-      date: "25 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Festival MHQ SMP Qur’an Assyauqi yang diselenggarakan pada 25 Desember 2025 merupakan ajang untuk menumbuhkan kecintaan siswa terhadap Al-Qur’an serta memotivasi mereka agar lebih semangat dalam menghafal dan menjaga hafalan. Kegiatan ini bertujuan membentuk pribadi yang disiplin, percaya diri, dan berakhlak Qur’ani. Melalui festival ini, anak-anak dilatih untuk istiqamah, bertanggung jawab, serta menjadikan Al-Qur’an sebagai pedoman dalam sikap dan kehidupan sehari-hari.",
-    },
-    {
-      id: 3,
-      link: Festival3,
-      title: "Festival Musabaqoh",
-      date: "25 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Festival MHQ SMP Qur’an Assyauqi yang diselenggarakan pada 25 Desember 2025 merupakan ajang untuk menumbuhkan kecintaan siswa terhadap Al-Qur’an serta memotivasi mereka agar lebih semangat dalam menghafal dan menjaga hafalan. Kegiatan ini bertujuan membentuk pribadi yang disiplin, percaya diri, dan berakhlak Qur’ani. Melalui festival ini, anak-anak dilatih untuk istiqamah, bertanggung jawab, serta menjadikan Al-Qur’an sebagai pedoman dalam sikap dan kehidupan sehari-hari.",
-    },
-    {
-      id: 4,
-      link: Festival4,
-      title: "Festival Musabaqoh",
-      date: "25 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Festival MHQ SMP Qur’an Assyauqi yang diselenggarakan pada 25 Desember 2025 merupakan ajang untuk menumbuhkan kecintaan siswa terhadap Al-Qur’an serta memotivasi mereka agar lebih semangat dalam menghafal dan menjaga hafalan. Kegiatan ini bertujuan membentuk pribadi yang disiplin, percaya diri, dan berakhlak Qur’ani. Melalui festival ini, anak-anak dilatih untuk istiqamah, bertanggung jawab, serta menjadikan Al-Qur’an sebagai pedoman dalam sikap dan kehidupan sehari-hari.",
-    },
-    {
-      id: 5,
-      link: Festival5,
-      title: "Festival Musabaqoh",
-      date: "25 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Festival MHQ SMP Qur’an Assyauqi yang diselenggarakan pada 25 Desember 2025 merupakan ajang untuk menumbuhkan kecintaan siswa terhadap Al-Qur’an serta memotivasi mereka agar lebih semangat dalam menghafal dan menjaga hafalan. Kegiatan ini bertujuan membentuk pribadi yang disiplin, percaya diri, dan berakhlak Qur’ani. Melalui festival ini, anak-anak dilatih untuk istiqamah, bertanggung jawab, serta menjadikan Al-Qur’an sebagai pedoman dalam sikap dan kehidupan sehari-hari.",
-    },
-    {
-      id: 6,
-      link: Festival6,
-      title: "Festival Musabaqoh",
-      date: "25 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Festival MHQ SMP Qur’an Assyauqi yang diselenggarakan pada 25 Desember 2025 merupakan ajang untuk menumbuhkan kecintaan siswa terhadap Al-Qur’an serta memotivasi mereka agar lebih semangat dalam menghafal dan menjaga hafalan. Kegiatan ini bertujuan membentuk pribadi yang disiplin, percaya diri, dan berakhlak Qur’ani. Melalui festival ini, anak-anak dilatih untuk istiqamah, bertanggung jawab, serta menjadikan Al-Qur’an sebagai pedoman dalam sikap dan kehidupan sehari-hari.",
-    },
-    {
-      id: 7,
-      link: Festival7,
-      title: "Festival Musabaqoh",
-      date: "25 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Festival MHQ SMP Qur’an Assyauqi yang diselenggarakan pada 25 Desember 2025 merupakan ajang untuk menumbuhkan kecintaan siswa terhadap Al-Qur’an serta memotivasi mereka agar lebih semangat dalam menghafal dan menjaga hafalan. Kegiatan ini bertujuan membentuk pribadi yang disiplin, percaya diri, dan berakhlak Qur’ani. Melalui festival ini, anak-anak dilatih untuk istiqamah, bertanggung jawab, serta menjadikan Al-Qur’an sebagai pedoman dalam sikap dan kehidupan sehari-hari.",
-    },
-    {
-      id: 8,
-      link: LombaAdzan,
-      title: "Lomba Adzan",
-      date: "25 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Festival MHQ SMP Qur’an Assyauqi yang diselenggarakan pada 25 Desember 2025 merupakan ajang untuk menumbuhkan kecintaan siswa terhadap Al-Qur’an serta memotivasi mereka agar lebih semangat dalam menghafal dan menjaga hafalan. Kegiatan ini bertujuan membentuk pribadi yang disiplin, percaya diri, dan berakhlak Qur’ani. Melalui festival ini, anak-anak dilatih untuk istiqamah, bertanggung jawab, serta menjadikan Al-Qur’an sebagai pedoman dalam sikap dan kehidupan sehari-hari.",
-    },
-    {
-      id: 9,
-      link: Peserta1,
-      title: "Peserta Lomba MHQ dan Adzan",
-      date: "25 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Festival MHQ SMP Qur’an Assyauqi yang diselenggarakan pada 25 Desember 2025 merupakan ajang untuk menumbuhkan kecintaan siswa terhadap Al-Qur’an serta memotivasi mereka agar lebih semangat dalam menghafal dan menjaga hafalan. Kegiatan ini bertujuan membentuk pribadi yang disiplin, percaya diri, dan berakhlak Qur’ani. Melalui festival ini, anak-anak dilatih untuk istiqamah, bertanggung jawab, serta menjadikan Al-Qur’an sebagai pedoman dalam sikap dan kehidupan sehari-hari.",
-    },
-    {
-      id: 10,
-      link: Peserta2,
-      title: "Peserta Lomba MHQ dan Adzan",
-      date: "25 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Festival MHQ SMP Qur’an Assyauqi yang diselenggarakan pada 25 Desember 2025 merupakan ajang untuk menumbuhkan kecintaan siswa terhadap Al-Qur’an serta memotivasi mereka agar lebih semangat dalam menghafal dan menjaga hafalan. Kegiatan ini bertujuan membentuk pribadi yang disiplin, percaya diri, dan berakhlak Qur’ani. Melalui festival ini, anak-anak dilatih untuk istiqamah, bertanggung jawab, serta menjadikan Al-Qur’an sebagai pedoman dalam sikap dan kehidupan sehari-hari.",
-    },
-    {
-      id: 11,
-      link: KejuaraanMHQ,
-      title: "Peserta Lomba MHQ dan Adzan",
-      date: "25 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Festival MHQ SMP Qur’an Assyauqi yang diselenggarakan pada 25 Desember 2025 merupakan ajang untuk menumbuhkan kecintaan siswa terhadap Al-Qur’an serta memotivasi mereka agar lebih semangat dalam menghafal dan menjaga hafalan. Kegiatan ini bertujuan membentuk pribadi yang disiplin, percaya diri, dan berakhlak Qur’ani. Melalui festival ini, anak-anak dilatih untuk istiqamah, bertanggung jawab, serta menjadikan Al-Qur’an sebagai pedoman dalam sikap dan kehidupan sehari-hari.",
-    },
-  ];
-
-  const DocumentationHorsebow = [
-    {
-      id: 1,
-      link: Horsebow1,
-      title: "Horsebow",
-      date: "28 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Horsebow Competition SMP Qur’an Assyauqi pada 28 Desember 2025 merupakan ajang perlombaan memanah berkuda yang melatih ketangkasan, fokus, dan keberanian. Kegiatan ini bertujuan membentuk karakter siswa yang disiplin, tangguh, dan sportif. Melalui kompetisi ini, siswa dibina untuk memiliki jiwa pejuang, percaya diri, serta menghidupkan semangat sunnah olahraga yang menyehatkan fisik dan menguatkan mental.",
-    },
-    {
-      id: 2,
-      link: Horsebow2,
-      title: "Horsebow",
-      date: "28 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Horsebow Competition SMP Qur’an Assyauqi pada 28 Desember 2025 merupakan ajang perlombaan memanah berkuda yang melatih ketangkasan, fokus, dan keberanian. Kegiatan ini bertujuan membentuk karakter siswa yang disiplin, tangguh, dan sportif. Melalui kompetisi ini, siswa dibina untuk memiliki jiwa pejuang, percaya diri, serta menghidupkan semangat sunnah olahraga yang menyehatkan fisik dan menguatkan mental.",
-    },
-    {
-      id: 3,
-      link: Horsebow3,
-      title: "Horsebow",
-      date: "28 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Horsebow Competition SMP Qur’an Assyauqi pada 28 Desember 2025 merupakan ajang perlombaan memanah berkuda yang melatih ketangkasan, fokus, dan keberanian. Kegiatan ini bertujuan membentuk karakter siswa yang disiplin, tangguh, dan sportif. Melalui kompetisi ini, siswa dibina untuk memiliki jiwa pejuang, percaya diri, serta menghidupkan semangat sunnah olahraga yang menyehatkan fisik dan menguatkan mental.",
-    },
-    {
-      id: 4,
-      link: Horsebow4,
-      title: "Horsebow",
-      date: "28 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Horsebow Competition SMP Qur’an Assyauqi pada 28 Desember 2025 merupakan ajang perlombaan memanah berkuda yang melatih ketangkasan, fokus, dan keberanian. Kegiatan ini bertujuan membentuk karakter siswa yang disiplin, tangguh, dan sportif. Melalui kompetisi ini, siswa dibina untuk memiliki jiwa pejuang, percaya diri, serta menghidupkan semangat sunnah olahraga yang menyehatkan fisik dan menguatkan mental.",
-    },
-    {
-      id: 5,
-      link: Horsebow5,
-      title: "Horsebow",
-      date: "28 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Horsebow Competition SMP Qur’an Assyauqi pada 28 Desember 2025 merupakan ajang perlombaan memanah berkuda yang melatih ketangkasan, fokus, dan keberanian. Kegiatan ini bertujuan membentuk karakter siswa yang disiplin, tangguh, dan sportif. Melalui kompetisi ini, siswa dibina untuk memiliki jiwa pejuang, percaya diri, serta menghidupkan semangat sunnah olahraga yang menyehatkan fisik dan menguatkan mental.",
-    },
-    {
-      id: 6,
-      link: Horsebow6,
-      title: "Horsebow",
-      date: "28 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Horsebow Competition SMP Qur’an Assyauqi pada 28 Desember 2025 merupakan ajang perlombaan memanah berkuda yang melatih ketangkasan, fokus, dan keberanian. Kegiatan ini bertujuan membentuk karakter siswa yang disiplin, tangguh, dan sportif. Melalui kompetisi ini, siswa dibina untuk memiliki jiwa pejuang, percaya diri, serta menghidupkan semangat sunnah olahraga yang menyehatkan fisik dan menguatkan mental.",
-    },
-    {
-      id: 7,
-      link: Horsebow7,
-      title: "Horsebow",
-      date: "28 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Horsebow Competition SMP Qur’an Assyauqi pada 28 Desember 2025 merupakan ajang perlombaan memanah berkuda yang melatih ketangkasan, fokus, dan keberanian. Kegiatan ini bertujuan membentuk karakter siswa yang disiplin, tangguh, dan sportif. Melalui kompetisi ini, siswa dibina untuk memiliki jiwa pejuang, percaya diri, serta menghidupkan semangat sunnah olahraga yang menyehatkan fisik dan menguatkan mental.",
-    },
-    {
-      id: 8,
-      link: Horsebow8,
-      title: "Horsebow",
-      date: "28 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Horsebow Competition SMP Qur’an Assyauqi pada 28 Desember 2025 merupakan ajang perlombaan memanah berkuda yang melatih ketangkasan, fokus, dan keberanian. Kegiatan ini bertujuan membentuk karakter siswa yang disiplin, tangguh, dan sportif. Melalui kompetisi ini, siswa dibina untuk memiliki jiwa pejuang, percaya diri, serta menghidupkan semangat sunnah olahraga yang menyehatkan fisik dan menguatkan mental.",
-    },
-    {
-      id: 9,
-      link: Horsebow9,
-      title: "Horsebow",
-      date: "28 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Horsebow Competition SMP Qur’an Assyauqi pada 28 Desember 2025 merupakan ajang perlombaan memanah berkuda yang melatih ketangkasan, fokus, dan keberanian. Kegiatan ini bertujuan membentuk karakter siswa yang disiplin, tangguh, dan sportif. Melalui kompetisi ini, siswa dibina untuk memiliki jiwa pejuang, percaya diri, serta menghidupkan semangat sunnah olahraga yang menyehatkan fisik dan menguatkan mental.",
-    },
-    {
-      id: 10,
-      link: Horsebow10,
-      title: "Horsebow",
-      date: "28 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Horsebow Competition SMP Qur’an Assyauqi pada 28 Desember 2025 merupakan ajang perlombaan memanah berkuda yang melatih ketangkasan, fokus, dan keberanian. Kegiatan ini bertujuan membentuk karakter siswa yang disiplin, tangguh, dan sportif. Melalui kompetisi ini, siswa dibina untuk memiliki jiwa pejuang, percaya diri, serta menghidupkan semangat sunnah olahraga yang menyehatkan fisik dan menguatkan mental.",
-    },
-    {
-      id: 11,
-      link: Horsebow11,
-      title: "Horsebow",
-      date: "28 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Horsebow Competition SMP Qur’an Assyauqi pada 28 Desember 2025 merupakan ajang perlombaan memanah berkuda yang melatih ketangkasan, fokus, dan keberanian. Kegiatan ini bertujuan membentuk karakter siswa yang disiplin, tangguh, dan sportif. Melalui kompetisi ini, siswa dibina untuk memiliki jiwa pejuang, percaya diri, serta menghidupkan semangat sunnah olahraga yang menyehatkan fisik dan menguatkan mental.",
-    },
-    {
-      id: 12,
-      link: JuaraHorsebow1,
-      title: "Juara Horsebow",
-      date: "28 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Horsebow Competition SMP Qur’an Assyauqi pada 28 Desember 2025 merupakan ajang perlombaan memanah berkuda yang melatih ketangkasan, fokus, dan keberanian. Kegiatan ini bertujuan membentuk karakter siswa yang disiplin, tangguh, dan sportif. Melalui kompetisi ini, siswa dibina untuk memiliki jiwa pejuang, percaya diri, serta menghidupkan semangat sunnah olahraga yang menyehatkan fisik dan menguatkan mental.",
-    },
-    {
-      id: 13,
-      link: JuaraHorsebow2,
-      title: "Juara Horsebow",
-      date: "28 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Horsebow Competition SMP Qur’an Assyauqi pada 28 Desember 2025 merupakan ajang perlombaan memanah berkuda yang melatih ketangkasan, fokus, dan keberanian. Kegiatan ini bertujuan membentuk karakter siswa yang disiplin, tangguh, dan sportif. Melalui kompetisi ini, siswa dibina untuk memiliki jiwa pejuang, percaya diri, serta menghidupkan semangat sunnah olahraga yang menyehatkan fisik dan menguatkan mental.",
-    },
-    {
-      id: 14,
-      link: JuaraHorsebow3,
-      title: "Juara Horsebow",
-      date: "28 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Horsebow Competition SMP Qur’an Assyauqi pada 28 Desember 2025 merupakan ajang perlombaan memanah berkuda yang melatih ketangkasan, fokus, dan keberanian. Kegiatan ini bertujuan membentuk karakter siswa yang disiplin, tangguh, dan sportif. Melalui kompetisi ini, siswa dibina untuk memiliki jiwa pejuang, percaya diri, serta menghidupkan semangat sunnah olahraga yang menyehatkan fisik dan menguatkan mental.",
-    },
-    {
-      id: 15,
-      link: JuaraHorsebow4,
-      title: "Juara Horsebow",
-      date: "28 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Horsebow Competition SMP Qur’an Assyauqi pada 28 Desember 2025 merupakan ajang perlombaan memanah berkuda yang melatih ketangkasan, fokus, dan keberanian. Kegiatan ini bertujuan membentuk karakter siswa yang disiplin, tangguh, dan sportif. Melalui kompetisi ini, siswa dibina untuk memiliki jiwa pejuang, percaya diri, serta menghidupkan semangat sunnah olahraga yang menyehatkan fisik dan menguatkan mental.",
-    },
-    {
-      id: 16,
-      link: JuaraHorsebow5,
-      title: "Juara Horsebow",
-      date: "28 Desember 2025",
-      location: "SMP Qur’an Assyauqi",
-      caption:
-        "Horsebow Competition SMP Qur’an Assyauqi pada 28 Desember 2025 merupakan ajang perlombaan memanah berkuda yang melatih ketangkasan, fokus, dan keberanian. Kegiatan ini bertujuan membentuk karakter siswa yang disiplin, tangguh, dan sportif. Melalui kompetisi ini, siswa dibina untuk memiliki jiwa pejuang, percaya diri, serta menghidupkan semangat sunnah olahraga yang menyehatkan fisik dan menguatkan mental.",
-    },
-  ];
-
-  const DocumentationBerenangs = [
-    {
-      id: 1,
-      link: Berenang1,
-      title: "Kegiatan Berenang",
-      date: " - ",
-      location: " - ",
-      caption: `
-Kegiatan berenang di SMP Qur’an Assyauqi merupakan salah satu bentuk pembinaan fisik dan karakter siswa yang
-berlandaskan nilai-nilai sunnah. Sebagaimana sabda Nabi ﷺ, “Ajarkanlah anak-anak kalian berenang, memanah,
-dan berkuda,” kegiatan ini menjadi upaya nyata sekolah dalam menghidupkan olahraga yang dianjurkan dalam Islam.
-
-Melalui kegiatan berenang, siswa dilatih untuk memiliki tubuh yang sehat dan kuat, mental yang berani, serta
-sikap disiplin dan tanggung jawab. Selain meningkatkan kebugaran jasmani, berenang juga membentuk kepercayaan
-diri, ketekunan, dan semangat pantang menyerah.
-
-Kegiatan ini diharapkan mampu mencetak generasi yang seimbang antara kekuatan fisik, kecerdasan mental, dan
-keteguhan iman, sehingga siap menjadi pribadi Qur’ani yang tangguh dan berakhlak mulia.
-`,
-    },
-    {
-      id: 2,
-      link: Berenang2,
-      title: "Kegiatan Berenang",
-      date: " - ",
-      location: " - ",
-      caption: `
-Kegiatan berenang di SMP Qur’an Assyauqi merupakan salah satu bentuk pembinaan fisik dan karakter siswa yang
-berlandaskan nilai-nilai sunnah. Sebagaimana sabda Nabi ﷺ, “Ajarkanlah anak-anak kalian berenang, memanah,
-dan berkuda,” kegiatan ini menjadi upaya nyata sekolah dalam menghidupkan olahraga yang dianjurkan dalam Islam.
-
-Melalui kegiatan berenang, siswa dilatih untuk memiliki tubuh yang sehat dan kuat, mental yang berani, serta
-sikap disiplin dan tanggung jawab. Selain meningkatkan kebugaran jasmani, berenang juga membentuk kepercayaan
-diri, ketekunan, dan semangat pantang menyerah.
-
-Kegiatan ini diharapkan mampu mencetak generasi yang seimbang antara kekuatan fisik, kecerdasan mental, dan
-keteguhan iman, sehingga siap menjadi pribadi Qur’ani yang tangguh dan berakhlak mulia.
-`,
-    },
-    {
-      id: 3,
-      link: Berenang3,
-      title: "Kegiatan Berenang",
-      date: " - ",
-      location: " - ",
-      caption: `
-Kegiatan berenang di SMP Qur’an Assyauqi merupakan salah satu bentuk pembinaan fisik dan karakter siswa yang
-berlandaskan nilai-nilai sunnah. Sebagaimana sabda Nabi ﷺ, “Ajarkanlah anak-anak kalian berenang, memanah,
-dan berkuda,” kegiatan ini menjadi upaya nyata sekolah dalam menghidupkan olahraga yang dianjurkan dalam Islam.
-
-Melalui kegiatan berenang, siswa dilatih untuk memiliki tubuh yang sehat dan kuat, mental yang berani, serta
-sikap disiplin dan tanggung jawab. Selain meningkatkan kebugaran jasmani, berenang juga membentuk kepercayaan
-diri, ketekunan, dan semangat pantang menyerah.
-
-Kegiatan ini diharapkan mampu mencetak generasi yang seimbang antara kekuatan fisik, kecerdasan mental, dan
-keteguhan iman, sehingga siap menjadi pribadi Qur’ani yang tangguh dan berakhlak mulia.
-`,
-    },
-    {
-      id: 4,
-      link: Berenang4,
-      title: "Kegiatan Berenang",
-      date: " - ",
-      location: " - ",
-      caption: `
-Kegiatan berenang di SMP Qur’an Assyauqi merupakan salah satu bentuk pembinaan fisik dan karakter siswa yang
-berlandaskan nilai-nilai sunnah. Sebagaimana sabda Nabi ﷺ, “Ajarkanlah anak-anak kalian berenang, memanah,
-dan berkuda,” kegiatan ini menjadi upaya nyata sekolah dalam menghidupkan olahraga yang dianjurkan dalam Islam.
-
-Melalui kegiatan berenang, siswa dilatih untuk memiliki tubuh yang sehat dan kuat, mental yang berani, serta
-sikap disiplin dan tanggung jawab. Selain meningkatkan kebugaran jasmani, berenang juga membentuk kepercayaan
-diri, ketekunan, dan semangat pantang menyerah.
-
-Kegiatan ini diharapkan mampu mencetak generasi yang seimbang antara kekuatan fisik, kecerdasan mental, dan
-keteguhan iman, sehingga siap menjadi pribadi Qur’ani yang tangguh dan berakhlak mulia.
-`,
-    },
-    {
-      id: 5,
-      link: Berenang5,
-      title: "Kegiatan Berenang",
-      date: " - ",
-      location: " - ",
-      caption: `
-Kegiatan berenang di SMP Qur’an Assyauqi merupakan salah satu bentuk pembinaan fisik dan karakter siswa yang
-berlandaskan nilai-nilai sunnah. Sebagaimana sabda Nabi ﷺ, “Ajarkanlah anak-anak kalian berenang, memanah,
-dan berkuda,” kegiatan ini menjadi upaya nyata sekolah dalam menghidupkan olahraga yang dianjurkan dalam Islam.
-
-Melalui kegiatan berenang, siswa dilatih untuk memiliki tubuh yang sehat dan kuat, mental yang berani, serta
-sikap disiplin dan tanggung jawab. Selain meningkatkan kebugaran jasmani, berenang juga membentuk kepercayaan
-diri, ketekunan, dan semangat pantang menyerah.
-
-Kegiatan ini diharapkan mampu mencetak generasi yang seimbang antara kekuatan fisik, kecerdasan mental, dan
-keteguhan iman, sehingga siap menjadi pribadi Qur’ani yang tangguh dan berakhlak mulia.
-`,
-    },
-    {
-      id: 6,
-      link: Berenang6,
-      title: "Kegiatan Berenang",
-      date: " - ",
-      location: " - ",
-      caption: `
-Kegiatan berenang di SMP Qur’an Assyauqi merupakan salah satu bentuk pembinaan fisik dan karakter siswa yang
-berlandaskan nilai-nilai sunnah. Sebagaimana sabda Nabi ﷺ, “Ajarkanlah anak-anak kalian berenang, memanah,
-dan berkuda,” kegiatan ini menjadi upaya nyata sekolah dalam menghidupkan olahraga yang dianjurkan dalam Islam.
-
-Melalui kegiatan berenang, siswa dilatih untuk memiliki tubuh yang sehat dan kuat, mental yang berani, serta
-sikap disiplin dan tanggung jawab. Selain meningkatkan kebugaran jasmani, berenang juga membentuk kepercayaan
-diri, ketekunan, dan semangat pantang menyerah.
-
-Kegiatan ini diharapkan mampu mencetak generasi yang seimbang antara kekuatan fisik, kecerdasan mental, dan
-keteguhan iman, sehingga siap menjadi pribadi Qur’ani yang tangguh dan berakhlak mulia.
-`,
-    },
-  ];
 
   return (
     <section className="py-20 px-4 bg-white min-h-screen relative overflow-hidden">
@@ -448,15 +51,16 @@ keteguhan iman, sehingga siap menjadi pribadi Qur’ani yang tangguh dan berakhl
               <div className="flex-1 h-px bg-gray-200" />
             </div>
             <div className="grid grid-cols-1 gap-8">
-              {DocumentationMhq.map((data) => (
+              {documentationMhq.map((data) => (
                 <Card
                   key={`mhq-${data.id}`}
-                  image={data.link}
+                  images={data.images}
                   title={data.title}
                   caption={data.caption}
                   date={data.date}
                   location={data.location}
                   targetId={`mhq-${data.id}`}
+                  navId={data.id}
                 />
               ))}
             </div>
@@ -471,15 +75,16 @@ keteguhan iman, sehingga siap menjadi pribadi Qur’ani yang tangguh dan berakhl
               <div className="flex-1 h-px bg-gray-200" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
-              {DocumentationHorsebow.map((data) => (
+              {documentationHorsebow.map((data) => (
                 <Card
                   key={`horsebow-${data.id}`}
-                  image={data.link}
+                  images={data.images}
                   title={data.title}
                   caption={data.caption}
                   date={data.date}
                   location={data.location}
                   targetId={`horsebow-${data.id}`}
+                  navId={data.id}
                 />
               ))}
             </div>
@@ -494,15 +99,16 @@ keteguhan iman, sehingga siap menjadi pribadi Qur’ani yang tangguh dan berakhl
               <div className="flex-1 h-px bg-gray-200" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
-              {DocumentationBerenangs.map((data) => (
+              {documentationBerenang.map((data) => (
                 <Card
                   key={`berenang-${data.id}`}
-                  image={data.link}
+                  images={data.images}
                   title={data.title}
                   caption={data.caption}
                   date={data.date}
                   location={data.location}
                   targetId={`berenang-${data.id}`}
+                  navId={data.id}
                 />
               ))}
             </div>

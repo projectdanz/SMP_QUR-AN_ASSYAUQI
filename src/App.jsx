@@ -8,6 +8,7 @@ import Home from "./Home";
 import About from "./page/about";
 import Contact from "./page/contact";
 import Documentation from "./page/Documentation";
+import DocumentationDetail from "./page/DocumentationDetail";
 
 function App() {
   const [showScroll, setShowScroll] = useState(false);
@@ -44,6 +45,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/documentation" element={<Documentation />} />
+        <Route path="/documentation/:id" element={<DocumentationDetail />} />
       </Routes>
 
       {/* Back to Top Button */}

@@ -23,7 +23,7 @@ const DocumentationCard = ({ images, title, date, targetId }) => {
 
         <div className="flex justify-center pb-4">
           <Link
-            to={`/documentation#${targetId}`}
+            to={`/documentation/${targetId}`}
             className="mt-3 inline-block w-64 text-center rounded-full 
                        bg-[#006DB8] text-white py-3 px-8 text-sm font-bold
                        hover:bg-[#005a99] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95"
