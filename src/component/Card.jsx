@@ -28,7 +28,7 @@ export default function Card({
         <div className="w-full md:w-[55%] p-8 md:p-10 flex flex-col justify-between bg-white">
           <div>
             <div className="mb-6 flex items-center gap-3">
-              <span className="px-3 py-1 bg-teal-50 text-teal-700 text-[10px] font-bold rounded-full uppercase tracking-widest border border-teal-100/50">
+              <span className="px-3 py-1 bg-blue-50 text-[#006DB8] text-[10px] font-bold rounded-full uppercase tracking-widest border border-blue-100/50">
                 Dokumentasi
               </span>
               <div className="h-1 w-1 bg-gray-300 rounded-full" />
@@ -36,20 +36,18 @@ export default function Card({
                 {date}
               </span>
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold text-[#061E29] mb-4 group-hover:text-teal-600 transition-colors duration-300">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#061E29] mb-4 group-hover:text-primary transition-colors duration-300">
               {title}
             </h3>
             <p className="text-gray-500 leading-relaxed mb-8 text-base font-light">
-              {caption
-                ? "-"
-                : caption}
+              {caption ? caption : "-"}
             </p>
           </div>
 
           <div className="space-y-4 pt-6 border-t border-gray-50">
             <div className="flex items-center text-sm text-gray-400 group-hover:text-gray-600 transition-colors">
-              <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center mr-3 group-hover:bg-teal-50 transition-colors">
-                <FaMapMarkerAlt className="text-teal-600 text-xs" />
+              <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center mr-3 group-hover:bg-blue-50 transition-colors">
+                <FaMapMarkerAlt className="text-primary text-xs" />
               </div>
               <span className="font-medium">
                 {location || "SMP Quran Assyauqi"}

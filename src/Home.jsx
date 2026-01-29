@@ -8,13 +8,17 @@ import Footer from "./page/footer";
 import { FaWhatsapp } from "react-icons/fa";
 import Button from "./component/Button";
 
-import Festival2 from "./assets/image/Documentasi_kegiatan/FestivalMusabaqoh-2.jpeg";
-import Festival1 from "./assets/image/Documentasi_kegiatan/FestivalMusabaqoh-1.jpeg";
-import Festival6 from "./assets/image/Documentasi_kegiatan/FestivalMusabaqoh-6.jpeg";
+import Festival2 from "./assets/image/Documentasi_kegiatan/festival_mhq/FestivalMusabaqoh-2.jpeg";
+import Festival1 from "./assets/image/Documentasi_kegiatan/festival_mhq/FestivalMusabaqoh-1.jpeg";
+import Festival6 from "./assets/image/Documentasi_kegiatan/festival_mhq/FestivalMusabaqoh-6.jpeg";
 
-import JuaraHorsebow3 from "./assets/image/Documentasi_kegiatan/KejuaraanHorseBow-3.jpeg";
-import Horsebow4 from "./assets/image/Documentasi_kegiatan/KegiatanHorseBow-4.jpeg";
-import Horsebow5 from "./assets/image/Documentasi_kegiatan/KegiatanHorseBow-5.jpeg";
+import JuaraHorsebow3 from "./assets/image/Documentasi_kegiatan/horsebow/KejuaraanHorseBow-3.jpeg";
+import Horsebow4 from "./assets/image/Documentasi_kegiatan/horsebow/KegiatanHorseBow-4.jpeg";
+import Horsebow5 from "./assets/image/Documentasi_kegiatan/horsebow/KegiatanHorseBow-5.jpeg";
+
+import Berenang1 from "./assets/image/Documentasi_kegiatan/berenang/Kegiatan_berenang1.jpeg"
+import Berenang2 from "./assets/image/Documentasi_kegiatan/berenang/Kegiatan_berenang2.jpeg"
+import Berenang5 from "./assets/image/Documentasi_kegiatan/berenang/Kegiatan_berenang5.jpeg"
 
 
 
@@ -30,6 +34,12 @@ const Home = () => {
     Horsebow4,
     JuaraHorsebow3,
     Horsebow5,
+  ];
+
+  const imagesBerenang = [
+    Berenang1,
+    Berenang2,
+    Berenang5,
   ];
 
   return (
@@ -65,6 +75,12 @@ const Home = () => {
               title="Kegiatan Horsebow"
               date="28 Desember 2025"
               targetId="horsebow"
+            />
+            <DocumentationCard
+              images={imagesBerenang}
+              title="Kegiatan Berenang"
+              date="-"
+              targetId="berenang"
             />
           </div>
         </div>
