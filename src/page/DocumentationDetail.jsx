@@ -1,6 +1,11 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FaArrowLeft, FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaArrowLeft,
+  FaCalendarAlt,
+  FaMapMarkerAlt,
+  FaHome,
+} from "react-icons/fa";
 import { allDocumentation } from "../data/documentationData";
 import { useEffect } from "react";
 
@@ -34,12 +39,13 @@ const DocumentationDetail = () => {
         {/* Back Button */}
         <Link
           to="/documentation"
-          className="inline-flex items-center gap-2 text-primary font-semibold mb-8 hover:gap-3 transition-all group"
+          className="fixed bottom-8 right-8 z-50 p-4 bg-primary text-white rounded-full shadow-2xl hover:scale-110 transition-transform duration-100 dark:shadow-blue-500/20 group"
+          title="Kembali ke Dokumentasi"
         >
-          <div className="p-2 bg-white rounded-full shadow-md group-hover:shadow-lg transition-all">
-            <FaArrowLeft />
-          </div>
-          Kembali ke Agenda
+          <FaArrowLeft className="text-2xl" />
+          <span className="absolute right-full mr-4 px-3 py-1 bg-gray-800 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            Kembali ke Dokumentasi
+          </span>
         </Link>
 
         {/* Header Section */}
