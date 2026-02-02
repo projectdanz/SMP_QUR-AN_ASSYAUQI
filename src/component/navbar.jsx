@@ -85,7 +85,7 @@ const Navbar = ({ links = [], className = "", variant = "fixed" }) => {
           >
             <img src={SchoolLogo} alt="Logo" className="h-8 md:h-10 w-auto" />
             <div className="text-xs md:text-md font-bold text-white leading-tight">
-              SMP QUR'AN <br className="md:hidden" /> ASSYAUQI
+              SMP QUR'AN ASSYAUQI <br className="md:hidden" /> BOARDING SCHOOL
             </div>
           </div>
 
@@ -177,7 +177,7 @@ const Navbar = ({ links = [], className = "", variant = "fixed" }) => {
           <div className="flex flex-col items-center gap-4 mb-8">
             <img src={SchoolLogo} alt="Logo" className="h-20 w-auto" />
             <div className="text-xl font-bold text-white text-center px-4">
-              SMP QUR'AN ASY SYAUQI
+              SMP QUR'AN ASY SYAUQI BOARDING SCHOOL
             </div>
           </div>
 
