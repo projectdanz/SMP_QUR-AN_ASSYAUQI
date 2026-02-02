@@ -7,14 +7,14 @@ import Footer from "./footer";
 
 const About = () => {
   return (
-    <>
+    <main>
       {/* Hero Section */}
-      <div className="relative h-[60vh] min-h-[400px] flex items-center justify-center">
+      <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
             src={saungPondok}
-            alt="Tentang Kami"
+            alt="Pemandangan Saung di SMP Qur'an Assyauqi"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-slate-900/60"></div>
@@ -27,10 +27,10 @@ const About = () => {
           </h1>
           <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full mb-6"></div>
           <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto font-light">
-            Mengenal lebih dekat profil, visi, dan misi SMP Qur'an Assyauqi
+            Mengenal lebih dekat profil, visi, and misi SMP Qur'an Assyauqi
           </p>
         </div>
-      </div>
+      </section>
 
       <div className="container mx-auto px-6 py-10">
         <Seaction__pengenalan />
@@ -39,7 +39,7 @@ const About = () => {
         <Seaction__keunggulan />
       </div>
       <Footer />
-    </>
+    </main>
   );
 };
 

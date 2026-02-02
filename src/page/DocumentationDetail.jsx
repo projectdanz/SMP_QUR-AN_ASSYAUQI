@@ -34,7 +34,7 @@ const DocumentationDetail = () => {
   }
 
   return (
-    <section className="py-20 px-4 bg-gray-50 min-h-screen">
+    <main className="py-20 px-4 bg-gray-50 min-h-screen">
       <div className="max-w-7xl mx-auto">
         {/* Back Button */}
         <Link
@@ -49,7 +49,7 @@ const DocumentationDetail = () => {
         </Link>
 
         {/* Header Section */}
-        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl shadow-blue-900/5 mb-12">
+        <article className="bg-white rounded-3xl p-8 md:p-12 shadow-xl shadow-blue-900/5 mb-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
@@ -78,7 +78,7 @@ const DocumentationDetail = () => {
           <p className="text-gray-600 text-lg leading-relaxed max-w-4xl whitespace-pre-line">
             {data.caption}
           </p>
-        </div>
+        </article>
 
         {/* Full Image Gallery Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -93,7 +93,7 @@ const DocumentationDetail = () => {
             >
               <img
                 src={img}
-                alt={`${data.title}-${index}`}
+                alt={`Dokumentasi ${data.title} - Foto ${index + 1}`}
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -101,7 +101,7 @@ const DocumentationDetail = () => {
           ))}
         </div>
       </div>
-    </section>
+    </main>
   );
 };
 

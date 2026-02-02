@@ -69,7 +69,7 @@ const Navbar = ({ links = [], className = "", variant = "fixed" }) => {
 
   return (
     <>
-      <div
+      <nav
         className={`${
           isContactPage ? "absolute" : "fixed"
         } top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -83,7 +83,11 @@ const Navbar = ({ links = [], className = "", variant = "fixed" }) => {
               scrolled || isOpen ? "opacity-100" : "opacity-0 md:opacity-0"
             }`}
           >
-            <img src={SchoolLogo} alt="Logo" className="h-8 md:h-10 w-auto" />
+            <img
+              src={SchoolLogo}
+              alt="Logo SMP Qur'an Assyauqi Boarding School"
+              className="h-8 md:h-10 w-auto"
+            />
             <div className="text-xs md:text-md font-bold text-white leading-tight">
               SMP QUR'AN ASSYAUQI <br className="md:hidden" /> BOARDING SCHOOL
             </div>
@@ -142,7 +146,7 @@ const Navbar = ({ links = [], className = "", variant = "fixed" }) => {
             )}
           </button>
         </div>
-      </div>
+      </nav>
 
       {/* Mobile Menu Overlay */}
       <div
@@ -175,7 +179,11 @@ const Navbar = ({ links = [], className = "", variant = "fixed" }) => {
         <div className="flex flex-col items-center gap-8">
           {/* Logo in Menu */}
           <div className="flex flex-col items-center gap-4 mb-8">
-            <img src={SchoolLogo} alt="Logo" className="h-20 w-auto" />
+            <img
+              src={SchoolLogo}
+              alt="Logo SMP Qur'an Assyauqi Boarding School"
+              className="h-20 w-auto"
+            />
             <div className="text-xl font-bold text-white text-center px-4">
               SMP QUR'AN ASY SYAUQI BOARDING SCHOOL
             </div>

@@ -5,7 +5,7 @@ import Button from "../component/Button";
 
 const Header = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <header className="relative w-full h-screen overflow-hidden">
       {/* Background Image with Overlay */}
       <Motion.div
         initial={{ scale: 1.1 }}
@@ -17,7 +17,7 @@ const Header = () => {
           <source srcSet={image__school__mobile} media="(max-width: 768px)" />
           <img
             src={image__school}
-            alt="School Background"
+            alt="Gedung SMP Qur'an Assyauqi Boarding School"
             className="w-full h-full object-cover"
           />
         </picture>
@@ -64,7 +64,7 @@ const Header = () => {
           </a>
         </Motion.div>
       </div>
-    </div>
+    </header>
   );
 };
 

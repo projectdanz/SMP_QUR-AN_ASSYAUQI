@@ -37,7 +37,7 @@ export default function Card({
               >
                 <img
                   src={img}
-                  alt={`${title}-${index}`}
+                  alt={`Foto ${index + 1} - ${title} di SMP Qur'an Assyauqi`}
                   className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700"
                 />
                 {index === 3 && displayImages.length > 4 && (

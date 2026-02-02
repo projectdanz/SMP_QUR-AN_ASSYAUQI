@@ -22,9 +22,9 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-slate-50 pb-20">
+    <main className="min-h-screen bg-slate-50 pb-20">
       {/* Header / Hero Section */}
-      <div className="h-72 bg-primary relative overflow-hidden">
+      <section className="h-72 bg-primary relative overflow-hidden">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-6 h-full flex flex-col justify-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
@@ -38,10 +38,10 @@ const Contact = () => {
         {/* Decorative circle */}
         <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
         <div className="absolute top-10 right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
-      </div>
+      </section>
 
       <div className="container mx-auto px-6 -mt-8 relative z-20">
-        <div
+        <section
           ref={cardRef}
           className="bg-white rounded-3xl shadow-xl overflow-hidden transition-transform duration-100 ease-out will-change-transform"
         >
@@ -51,7 +51,7 @@ const Contact = () => {
               <div className="absolute inset-0 bg-primary/5 pattern-grid-lg opacity-20 z-10"></div>
               <img
                 src={ayokPondok}
-                alt="Mari Mondok"
+                alt="Ajakan mondok di SMP Qur'an Assyauqi Boarding School"
                 className="w-full h-full object-cover relative z-0"
               />
             </div>
@@ -207,7 +207,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* <div className="mt-8 flex justify-center">
           <a
@@ -225,10 +225,10 @@ const Contact = () => {
         </div> */}
 
         {/* Map Section */}
-        <div className="mt-16 bg-white p-4 rounded-3xl shadow-lg">
+        <section className="mt-16 bg-white p-4 rounded-3xl shadow-lg">
           <div className="w-full h-96 rounded-2xl overflow-hidden relative">
             <iframe
-              title="Map SMP Quran Assyauqi"
+              title="Map Lokasi SMP Quran Assyauqi"
               width="100%"
               height="100%"
               frameBorder="0"
@@ -239,9 +239,9 @@ const Contact = () => {
               className="absolute inset-0 w-full h-full"
             ></iframe>
           </div>
-        </div>
+        </section>
       </div>
-    </div>
+    </main>
   );
 };
 

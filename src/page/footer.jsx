@@ -17,7 +17,11 @@ const Footer = () => {
           <div className="space-y-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <img src={SchoolLogo} alt="Logo" className="h-12 w-auto" />
+                <img
+                  src={SchoolLogo}
+                  alt="Logo SMP Qur'an Assyauqi Boarding School"
+                  className="h-12 w-auto"
+                />
                 <h3 className="text-2xl font-bold tracking-wide">
                   SMP QUR'AN ASSYAUQI
                 </h3>

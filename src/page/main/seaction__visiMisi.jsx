@@ -36,7 +36,7 @@ const VisiMisi = () => {
           >
             <img
               src={image__saung}
-              alt="Saung Pondok"
+              alt="Pemandangan Saung di SMP Qur'an Assyauqi Boarding School"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-primary/10"></div>

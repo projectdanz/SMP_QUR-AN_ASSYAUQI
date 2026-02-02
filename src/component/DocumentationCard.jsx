@@ -9,7 +9,7 @@ const DocumentationCard = ({ images, title, date, targetId }) => {
           <img
             key={index}
             src={img}
-            alt={`dokumentasi-${index}`}
+            alt={`Dokumentasi ${title} - Foto ${index + 1}`}
             className="w-full h-full object-cover"
           />
         ))}

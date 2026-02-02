@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import { useState, useEffect } from "react";
 import { motion as Motion, AnimatePresence } from "framer-motion";
 import { FaArrowUp } from "react-icons/fa";
@@ -10,8 +15,9 @@ import Contact from "./page/contact";
 import Documentation from "./page/Documentation";
 import DocumentationDetail from "./page/DocumentationDetail";
 
-function App() {
+function AppContent() {
   const [showScroll, setShowScroll] = useState(false);
+  const location = useLocation();
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -19,6 +25,25 @@ function App() {
     { href: "/contact", label: "Contact Us" },
     { href: "/documentation", label: "News Agenda" },
   ];
+
+  useEffect(() => {
+    const titles = {
+      "/": "Home - SMP Qur'an Assyauqi Boarding School",
+      "/about": "Tentang Kami - SMP Qur'an Assyauqi Boarding School",
+      "/contact": "Kontak Kami - SMP Qur'an Assyauqi Boarding School",
+      "/documentation":
+        "Dokumentasi & Berita - SMP Qur'an Assyauqi Boarding School",
+    };
+
+    const currentPath = location.pathname;
+    if (currentPath.startsWith("/documentation/")) {
+      document.title =
+        "Detail Dokumentasi - SMP Qur'an Assyauqi Boarding School";
+    } else {
+      document.title =
+        titles[currentPath] || "SMP Qur'an Assyauqi Boarding School";
+    }
+  }, [location.pathname]);
 
   useEffect(() => {
     const checkScrollTop = () => {
@@ -38,7 +63,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <>
       <Navbar links={navLinks} className="justify-center" />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -51,8 +76,8 @@ function App() {
       {/* Back to Top Button */}
       <AnimatePresence>
         {showScroll &&
-          (window.location.pathname === "/about" ||
-            window.location.pathname === "/contact") && (
+          (location.pathname === "/about" ||
+            location.pathname === "/contact") && (
             <Motion.button
               initial={{ opacity: 0, scale: 0.5, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -67,6 +92,14 @@ function App() {
             </Motion.button>
           )}
       </AnimatePresence>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 }

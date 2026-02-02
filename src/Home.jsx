@@ -12,7 +12,7 @@ import { allDocumentation } from "./data/documentationData";
 
 const Home = () => {
   return (
-    <>
+    <main>
       <Header />
       <VisiMisi />
       <ProgramUnggulan />
@@ -75,7 +75,7 @@ const Home = () => {
       >
         <FaWhatsapp size={32} color="#ffffffff" />
       </a>
-    </>
+    </main>
   );
 };
 
