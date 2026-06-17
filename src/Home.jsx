@@ -3,7 +3,7 @@ import VisiMisi from "./page/main/seaction__visiMisi";
 import ProgramUnggulan from "./page/main/seaction__programUnggulan";
 import Fasilitas from "./page/main/seaction__fasilitas";
 import DocumentationCard from "./component/DocumentationCard";
-import Testimoni from "./page/main/seaction__testimoni";
+import Testimoni from "./page/main/seaction__testimoni"; // Sudah ter-import aman
 import Footer from "./page/footer";
 import { FaWhatsapp } from "react-icons/fa";
 import Button from "./component/Button";
@@ -17,6 +17,7 @@ const Home = () => {
       <VisiMisi />
       <ProgramUnggulan />
       <Fasilitas />
+
       <div className="flex justify-center pb-8">
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSeiVbj1oUbye_KVPuX1ln60Jt8aTkC3JCmzb943GMXLpIrthA/viewform?usp=publish-editor"
@@ -26,6 +27,7 @@ const Home = () => {
           <Button className="w-64 py-4">Daftar Sekarang</Button>
         </a>
       </div>
+
       {/* Documentation Card Section */}
       <section className="py-20 px-4 bg-gray-50 my-10">
         <div className="max-w-6xl mx-auto">
@@ -63,6 +65,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* ─── PASANG TESTIMONI DI SINI ─── */}
+      <Testimoni />
+
       <Footer />
 
       {/* WhatsApp Floating Button */}
