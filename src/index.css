@@ -4,3 +4,9 @@
     --color-primary: #006DB8;
     --color-secondary: #0F172A;
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
